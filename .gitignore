@@ -5,6 +5,17 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 
+*.dex
+*.jar
+*.class
+*.apk
+*.ap_
+bin/
+gen/
+local.properties
+proguard/
+*.log
+
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
