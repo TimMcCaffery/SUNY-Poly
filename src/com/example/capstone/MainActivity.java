@@ -11,7 +11,6 @@ import android.view.View;
 public class MainActivity extends ActionBarActivity {
 	
 	//Sends buttons to outside links inside project
-	public final static String EXTRA_MESSAGE = "com.example.capstone.MESSAGE";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,35 +21,44 @@ public class MainActivity extends ActionBarActivity {
 	//Button Selection Process, onClick for Angel and Banner Buttons
 	public void SelectButton(View v){
 		
-		//Allows you to send things to other activities
-		Intent WebIntent = new Intent(this, WebActivity.class);
+		//Creates another activity page
 		Intent NumIntent = new Intent(this, NumberActivity.class);
-
-		String url = "http://www.sunyit.edu/mobile";
+		Intent WebIntent = new Intent(this, WebActivity.class);
+		
+		String message = "http://www.sunyit.edu/mobile";
 		
 		//Chooses between the buttons, and selects the url
 		switch(v.getId()){
 		case R.id.Angel: //Sends To Angel
-			url = "https://sunyit.sln.suny.edu/home.asp";
+			message = "https://sunyit.sln.suny.edu/home.asp";
 			break;
 		case R.id.Banner: //Sends To Banner
-			url = "https://sunyit.sln.suny.edu/home.asp";
+			message = "https://banner.sunyit.edu";
 			break;
 		case R.id.SchoolStore: //Sends to School Store
-			url= "http://m.bkstr.com/suny-itstore/home";
+			message = "http://m.bkstr.com/suny-itstore/home";
+			break;
+		case R.id.Laundry: //Sends to Laundry
+			message = "http://m.laundryview.com";
+			break;
+		case R.id.CanceledClasses: //Sends to Canceled Classes
+			message = "https://sunyit.edu/apps/canceled_classes";
 			break;
 		}
+		
 		
 		//Selects which activity to start
 		if ((v.getId() == R.id.Angel) || (v.getId() == R.id.Banner) || 
-				(v.getId() == R.id.SchoolStore)){
+				(v.getId() == R.id.SchoolStore) || (v.getId() == R.id.Laundry) ||
+				(v.getId() == R.id.CanceledClasses)){
 			
-			WebIntent.putExtra(EXTRA_MESSAGE, url);
-			startActivity(WebIntent);
+			WebIntent.putExtra("URL", message);
+			startActivity(WebIntent); //Sends to website page
 		
-		}else if (v.getId() == R.id.EmergencyContacts){
-			startActivity(NumIntent);
+		}else if (v.getId() == R.id.Contacts){
+				startActivity(NumIntent); //Sends to Phone Number Page
 		}
+			
 
 	}
 	
@@ -72,4 +80,25 @@ public class MainActivity extends ActionBarActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
+	/*
+	private void trySetupSwipeRefresh() {
+        mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.MenuLayout);
+        if (mSwipeRefreshLayout != null) {
+-            mSwipeRefreshLayout.setColorScheme(
++            mSwipeRefreshLayout.setColorSchemeResources(
+                    R.color.refresh_progress_1,
+                    R.color.refresh_progress_2,
+-                    R.color.refresh_progress_3,
+-                    R.color.refresh_progress_4);
++                    R.color.refresh_progress_3);
+            mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            	
+            }@Override
+                public void onRefresh() {
+            		return;
+            }
+            }
+	}
+	*/
 }

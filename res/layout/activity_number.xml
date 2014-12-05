@@ -1,33 +1,104 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.capstone.NumberActivity" >
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true" >
 
     <LinearLayout
-        android:id="@+id/MenuLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:orientation="vertical" >
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
 
         <Button
-            android:id="@+id/UnivPoli"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/NumUnivPoli"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="OnDial"
             android:text="@string/UnivPoli" />
 
         <Button
-            android:id="@+id/TestButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Bother Joe" />
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Admissions" 
+            android:id="@+id/NumAdmissions"
+            android:onClick="OnDial"/>
 
     </LinearLayout>
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/NumCA"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="OnDial"
+            android:text="@string/CollegeAssociation" />
+
+        <Button
+            android:id="@+id/NumLibrary"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="OnDial"
+            android:text="@string/Library" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/NumMail"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="OnDial"
+            android:text="@string/Mailroom" />
+
+        <Button
+            android:id="@+id/NumResLife"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="OnDial"
+            android:text="@string/ResLife" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/NumSchoolStore"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="OnDial"
+            android:text="@string/SchoolStore" />
+
+        <Button
+            android:id="@+id/NumSA"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="OnDial"
+            android:text="@string/StudentAssociation" />
+
+    </LinearLayout>
+    
+</LinearLayout>

@@ -9,6 +9,7 @@
         android:targetSdkVersion="21" />
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -47,6 +48,30 @@
         <activity
             android:name=".ClassActivity"
             android:label="@string/title_activity_class"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.capstone.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CancelActivity"
+            android:label="@string/title_activity_cancel"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.capstone.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CanceledClassesActivity"
+            android:label="@string/title_activity_canceled_classes"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.capstone.MainActivity" />
+        </activity>
+        <activity
+            android:name=".QuashActivity"
+            android:label="@string/title_activity_quash"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
