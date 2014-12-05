@@ -1,0 +1,16 @@
+{ "angel" : "https://sunyit.sln.suny.edu/home.asp",
+  "banner" : "https://banner.sunyit.edu",
+  "cancelled classes" : "https://sunyit.edu/apps/canceled_classes",
+  "contacts" : {
+  	"university police" : "3157927222",
+  	"admissions" : "3157927208",
+  	"college associations" : "3157927341",
+  	"library" : "3157927245",
+  	"mailroom" : "3157927204",
+  	"residential life" : "3157927810",
+  	"school store" : "3157927257",
+  	"student association" : "3157927135"
+  },
+  "laundry" : "http://m.laundryview.com/lvs.php",
+  "school store" : "http://m.bkstr.com/suny-itstore/home"
+}
