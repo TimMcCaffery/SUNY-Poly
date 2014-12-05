@@ -1,0 +1,8 @@
+{ 
+  "angel" @ "https://sunyit.sln.suny.edu/home.asp",
+  "banner" @ "https://banner.sunyit.edu",
+  "cancelled classes" @ "https://sunyit.edu/apps/canceled_classes",
+  "contacts" @ "https://raw.githubusercontent.com/TimMcCaffery/SUNY-Poly/master/contact-index.json",
+  "laundry" @ "http://m.laundryview.com/lvs.php",
+  "school store" @ "http://m.bkstr.com/suny-itstore/home"
+}
