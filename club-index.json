@@ -1,0 +1,138 @@
+{
+ "Clubs": [
+	{
+	 "Name" : "Club Creaticity",
+     "Description" : "We encourage students that have the desire to grow personally and professionally through experiential events and activities. The club strives to enrich students' educational endeavors with creative thinking. We hope to expose opportunities that foster achievement with self-confidence, thinking outside the box, taking action towards healthy life choices, and with sharing interests relating to cultures and society. Club Creaticity also promotes an entrepreneurial environment in our local community",
+	 "President" : "President : Stacey Smith"
+	},
+	{
+	 "Name" : "West Indian African Club(W.I.A.C)",
+     "Description" : "In WIAC we focus on cultural diversity, unity, as well as innovative activities to better our campus. People from any ethnic background can join the more Diversity the better.",
+	 "President" : "President: Eustace Camal Jr (EJ)"
+	},
+     "Name" : "Black Latino American Student Union(B.L.A.S.U)",
+     "Description" : "BLASU is a club that focuses on the integration and unification of different ethnicities through common interests of events.  Our goals are to educate people about the Black and Latino culture and unify different races on campus and in the community.",
+	 "President" : "President: Lisbania(Liz) Guzman"
+	},
+	{
+	 "Name" : "MAGIC",
+     "Description" : "The purpose is to provide a safe, secure and friendly environment for people of all skill levels to come and enjoy the game Magic: The Gathering.  Magic the Gathering club also hosts many events including but not limited to new product preleases, booster drafts, as well other events for players to come together for a social and entertaining experience.",
+	 "President" : "President:Matthew Biscardi"
+	},
+	{
+	 "Name" : "Wildcats Care",
+     "Description" : "Wildcat's Care Club is a community service club here on campus. Our mission is to not only better our students but better the city of Utica. We give back to the community by providing service, hospitality, and a big smile! And our motto is "No one cares like Wildcat's Care!"",
+	 "President" : "President: Michael Aiello"
+	},
+	{
+	 "Name" : "Television Production Club",
+	 "Description" : " ",
+	 "President" : "President:  Devin Zapka"
+	},
+	{
+	 "Name" : "Duel Academy",
+     "Description" : "The purpose is to provide a haven for duelists of all card games to come and collaboarate, due, and trade with other duelists. Duel Academy is also always interested in added/ introducing new card games students may have to offer or club members that want to learn a new card game.",
+     "President" : "Presient:  Josh Koster"
+	},
+	{
+	 "Name" : "Boarders Club",
+     "Description" : "The idea was to make it easier for skaters/long boarders/ snowboarders/skiers to know and meet more people like each other. As well as create events for people who are interested in learning about these type of sports.",
+	 "President" : "President:  Khameron Gumbs"
+	},
+	{
+	 "Name" : "Anime Club",
+	 "Description" : " ",
+	 "President" : "President:  Emily Lafary"
+	},
+	{
+	 "Name" : "Brewers Club",
+     "Description" : "As a club our purpose is to strive to educate the members of the school community about the different steps and methods of brewing, tasting and evaluating brews of our own making, touring breweries to further our education, competing in local brew competitions and exploring the scientific process behind brewing.",
+	 "President" : "President: Salvatore (Sal) Zaydon"
+	},
+	{
+	 "Name" : "Students of Christ",
+	 "Description" : " ",
+	 "President" : "President: Alex Szentgyorgyi"
+	},
+	{
+	 "Name" : "Role Players Guild (RPG)",
+	 "Description" : " ",
+	 "President" : "President: Amanda  Ruhland"
+	},
+	{
+	 "Name" : "Asian Affiliated Association",
+     "Description" : "Purpose is to gather individuals that would like to partake and enrich their own livelihoods with Asian cultures. We do so by educating this group of people on the different subject matters to which we exemplify by making a dish of a certain culture and analyzing the taste and spices specifically used",
+	 "President" : "President: James Zhu"
+	},
+	{
+	 "Name" : "Pool Players Club",
+	 "Description" : "This is for Pool Players Club is formally known as PPC. We hold amazing tournaments throughout the semester. This club’s main purpose is to allow pool players to develop into expertise players. They will learn different styles of playing from the pool players that have been active in PPC for 3 years. This is a great way to interact with people that share the same hobby.",
+	 "President" : "President: Aaron Dzigas"
+	},
+	{
+	 "Name" : "BAJA Society of Automotive Engineers (SAE)",
+	 "Description" : "",
+	 "President" : "President: Benjamin Burris"
+	},
+	{
+	 "Name" : "SUNYIT Student Veterans",
+	 "Description" : "Purpose is to provide military, active duty personnel and club members with the resources, support and advocacy needed to succeed in higher education following graduation.",
+	 "President" : "President: Lance Tlustos"
+	},
+	{
+	 "Name" : "International  Student Association(I.S.A)",
+     "Description" : "Our mission is to get all the international students together and promote different cultures. We try to showcase different cultures through small parties and events. We are open to anyone who likes to be a part of this big culturally mongrelized community.",
+	"President" : "President: Sindhusha Marru"
+	},
+	{
+	 "Name" : "Psychology & Sociology Club",
+     "Description" : "Our mission is to give back to the community while helping the students involve in this club to establish connections that will better themselves for a career down the road in the fields of Psychology, Sociology, and community and Behavioral Health. We partake in several community service activities and host an annual benefit dinner to raise money for a non-profit organization of our choosing.",
+	 "President" : "President: Lauren Pugh"
+	},
+	{
+	"Name" : "SUNY Cycling Club",
+	"Description" : " ",
+	"President" : "President: Benjamin Burris"
+	},
+	{
+	 "Name" : "SUNYIT Adventure Club  (ITAC)",
+	 "Description" : " ",
+	 "President" : "President: Benjamin Burris"
+	},
+	{
+	 "Name" : "SUNYIT Dance Club",
+     "Description" : "The purpose of dance club is to allow students to either continue or start a dance career. Our hope is to put on more performances and maybe even plays. All singers’ musicians, artist, dancers and everyone in between is more than welcome to join us.",
+	 "President" : "President: Devon Mancini"
+	},
+	{
+	 "Name" : "Gay Straight Alliance (GSA)",
+	 "Description" : " ",
+	 "President" : "President:  Isabella Johns"
+	},
+	{
+	 "Name" : "Network & Computer Security (N.C.S)",
+     "Description" : "NCS brings students together to develop their knowledge of computers and computer security.  Students are invited to hel administer our student run network to get hands on experience managing business critical servers and services in a low risk environment . By exposing students to new challenges meeting prominent members of the industry, and providing a fun learning space the NCS club hopes to teach our members to be the best that they can.",
+	 "President" : "President:  Peter Shipman"
+	},
+	{
+	 "Name" : "Institute of Electrical and Electronics Engineers (IEEE)",
+	 "Description" : "IEEE inspires a global community through IEEE’s highly cited publications, conferences, and technology standards, professional and educational activities.",
+	 "President" : "President: Raymond Mashewske"
+	},
+	{
+	 "Name" : "Student Health Information Management Association (SHIMA)",
+	 "Description" : "SHIMA will allow for networks to be built among students, faculty others working in the profession, and the community. We hope that SHIMA will allow for others to become more aware of the HIM field and what is has to offer.",
+	 "President" : "President: Laken Macfarland"
+	},
+	{
+	 "Name" : "Communication and Information Design(CID) Club",
+	 "Description" : " ",
+	 "President" : "President: Cherese Lumsden- Wallace"
+	},
+	{
+	 "Name" : "Nursing Club",
+	 "Description" : "The purpose of the nursing club is to bring together nursing majors or anyone in the health field, in order to share experiences and form networks for the future.",
+	 "President" : "President: Hannah Nortz"
+	}
+ ]
+}
