@@ -48,7 +48,9 @@
 		{
 		 "name" : "Brewers Club",
 		 "description" : "As a club our purpose is to strive to educate the members of the school community about the different steps and methods of brewing, tasting and evaluating brews of our own making, touring breweries to further our education, competing in local brew competitions and exploring the scientific process behind brewing.",
-		 "president" : "President: Salvatore (Sal) Zaydon"
+		 "president" : "President: Salvatore (Sal) Zaydon",
+		 "website" : "http://brewers.cs.sunyit.edu",
+		 "meeting-times" : "Fridays"
 		},
 		{
 		 "name" : "Students of Christ",
