@@ -1,9 +1,36 @@
-{ 
-  "angel" : "https://sunyit.sln.suny.edu/home.asp",
-  "banner" : "https://banner.sunyit.edu",
-  "cancelled classes" : "https://sunyit.edu/apps/canceled_classes",
-  "clubs" : "https://raw.githubusercontent.com/TimMcCaffery/SUNY-Poly/master/club-index.json",
-  "contacts" : "https://raw.githubusercontent.com/TimMcCaffery/SUNY-Poly/master/contact-index.json",
-  "laundry" : "http://m.laundryview.com/lvs.php",
-  "school store" : "http://m.bkstr.com/suny-itstore/home"
+{
+  "albany": {
+    "blackboard": "https://blackboard.albany.edu",
+    "ellucian": "https://asurams.gabest.usg.edu/pls/B210/twbkwbis.P_GenMenu?name=homepage",
+    "clubs": "http://www.albany.edu/isss/activities/clubs.shtml",
+    "contacts": {
+      "university police": "tel:5184423131",
+      "admissions": "tel:5184425435",
+      "library": "tel:5189563600",
+      "Human Resources": "tel:5184374700",
+      "residential life": "tel:5184425875",
+      "mailroom": "tel:5184423272",
+      "school store": "tel:5184425989",
+      "student association": "tel:5184425640"
+    },
+    "laundry": "http://m.laundryview.com/lvs.php?s=5777",
+    "schoolstore": "http://albany.bncollege.com/"
+  },
+  "Utica": {
+    "angel": "https://sunyit.sln.suny.edu/home.asp",
+    "banner": "https://banner.sunyit.edu",
+    "clubs": "https://raw.githubusercontent.com/TimMcCaffery/SUNY-Poly/master/club-index.json",
+    "contacts": {
+      "university police": "tel:3157927222",
+      "admissions": "tel:3157927208",
+      "college associations": "tel:3157927341",
+      "library": "tel:3157927245",
+      "mailroom": "tel:3157927204",
+      "residential life": "tel:3157927810",
+      "school store": "tel:3157927257",
+      "student association": "tel:3157927135"
+    },
+    "laundry": "http://m.laundryview.com/lvs.php",
+    "schoolstore": "http://m.bkstr.com/suny-itstore/home"
+  }
 }
