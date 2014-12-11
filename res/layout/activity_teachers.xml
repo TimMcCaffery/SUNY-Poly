@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Buisness"
+			android:background="#FFCC00"
+            android:textColor="#1947D1"
+            android:id="@+id/Buisness" 
+            android:onClick="SelectDepartment"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Communication" 
+            android:textColor="#FFCC00"
+            android:background="#1947D1"
+            android:id="@+id/Communication"
+            android:onClick="SelectDepartment"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Computer Science" 
+            android:textColor="#FFCC00"
+            android:background="#1947D1"
+            android:id="@+id/ComputerScience"
+            android:onClick="SelectDepartment"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Engineering, Science \n and Math"
+            android:background="#FFCC00"
+            android:textColor="#1947D1"
+            android:id="@+id/ESM"
+            android:onClick="SelectDepartment" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Nursing"
+	    	android:id="@+id/Nursing"
+            android:background="#FFCC00"
+            android:textColor="#1947D1"
+            android:onClick="SelectDepartment" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Social Science"
+            android:textColor="#FFCC00"
+            android:background="#1947D1"
+            android:id="@+id/SocialScience"
+            android:onClick="SelectDepartment" />
+
+    </LinearLayout>
+    
+    
+</LinearLayout>

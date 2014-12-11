@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/NumUnivPoli"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FFCC00"
+            android:background="#1947D1"
+            android:onClick="OnDial"
+            android:text="University Police" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Admissions"
+			android:background="#FFCC00"
+            android:textColor="#1947D1" 
+            android:id="@+id/NumAdmissions"
+            android:onClick="OnDial"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/NumHR"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+			android:background="#FFCC00"
+            android:textColor="#1947D1"
+            android:onClick="OnDial"
+            android:text="Human Resources" />
+
+        <Button
+            android:id="@+id/NumLibrary"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FFCC00"
+            android:background="#1947D1"
+            android:onClick="OnDial"
+            android:text="Library" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/NumMail"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FFCC00"
+            android:background="#1947D1"
+            android:onClick="OnDial"
+            android:text="Mail room" />
+
+        <Button
+            android:id="@+id/NumResLife"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="OnDial"
+			android:background="#FFCC00"
+            android:textColor="#1947D1"
+            android:text="Res Life" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/NumSchoolStore"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="OnDial"
+			android:background="#FFCC00"
+            android:textColor="#1947D1"
+            android:text="School Store" />
+
+        <Button
+            android:id="@+id/NumSA"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FFCC00"
+            android:background="#1947D1"
+            android:onClick="OnDial"
+            android:text="Student Association" />
+
+    </LinearLayout>
+    
+</LinearLayout>

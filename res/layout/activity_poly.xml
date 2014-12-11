@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Angel"
+			android:background="#FFCC00"
+            android:textColor="#1947D1"
+            android:id="@+id/Angel" 
+            android:onClick="SelectButton"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Banner" 
+            android:textColor="#FFCC00"
+            android:background="#1947D1"
+            android:id="@+id/Banner"
+            android:onClick="SelectButton"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Canceled Classes" 
+            android:textColor="#FFCC00"
+            android:background="#1947D1"
+            android:id="@+id/CanceledClasses"
+            android:onClick="SelectButton"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="School Store"
+            android:background="#FFCC00"
+            android:textColor="#1947D1"
+            android:id="@+id/SchoolStore"
+            android:onClick="SelectButton" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Clubs"
+	    	android:id="@+id/Clubs"
+            android:background="#FFCC00"
+            android:textColor="#1947D1"
+            android:onClick="SelectButton" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Laundry"
+            android:textColor="#FFCC00"
+            android:background="#1947D1"
+            android:id="@+id/Laundry"
+            android:onClick="SelectButton" />
+
+    </LinearLayout>
+    
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Teachers"
+	    	android:id="@+id/Teachers"
+            android:textColor="#FFCC00"
+            android:background="#1947D1"
+            android:onClick="SelectButton" />   
+                 
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Contacts"
+            android:id="@+id/Contacts"
+            android:background="#FFCC00"
+            android:textColor="#1947D1"
+            android:onClick="SelectButton" />
+
+    </LinearLayout>
+</LinearLayout>
