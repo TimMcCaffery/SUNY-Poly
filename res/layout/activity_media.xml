@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B9AE2" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Join Our Social Experience"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="73dp"
+        android:text="Facebook" 
+        android:onClick="SelectButton"/>
+
+    <Button
+        android:id="@+id/LinkedIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/facebook"
+        android:layout_below="@+id/facebook"
+        android:text="LinkedIn"
+        android:onClick="SelectButton" />
+
+    <Button
+        android:id="@+id/Twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/LinkedIn"
+        android:layout_below="@+id/LinkedIn"
+        android:text="Twitter"
+        android:onClick="SelectButton" />
+
+    <Button
+        android:id="@+id/Youtube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/Twitter"
+        android:layout_below="@+id/Twitter"
+        android:text="Youtube"
+        android:onClick="SelectButton" />
+
+</RelativeLayout>

@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.capstone"
+    package="com.example.projecttesting"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="9"
         android:targetSdkVersion="21" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
+        android:label="SUNY POLY"
         android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:name="com.example.Poly.MainActivity"
+            android:label="Suny Poly" 
+            android:screenOrientation="portrait"
+    		android:configChanges="keyboardHidden|orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,56 +32,93 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".WebActivity"
-            android:label="@string/title_activity_web"
-            android:parentActivityName=".MainActivity" >
+            android:name="com.example.Poly.ClubActivity"
+            android:label="Utica&apos;s Clubs"
+            android:parentActivityName="com.example.Poly.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.capstone.MainActivity" />
+                android:value="com.example.projecttesting.MainActivity" />
         </activity>
         <activity
-            android:name=".NumberActivity"
-            android:label="@string/title_activity_number"
-            android:parentActivityName=".MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.capstone.MainActivity" />
-
-            <intent-filter>
-                <action android:name="android.intent.action.DIAL" />
-            </intent-filter>
+            android:name="com.example.Poly.SunyitFragment"
+            android:label="Utica" 
+            android:screenOrientation="portrait"
+   			android:configChanges="keyboardHidden|orientation|screenSize">
         </activity>
         <activity
-            android:name=".ClassActivity"
-            android:label="@string/title_activity_class"
-            android:parentActivityName=".MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.capstone.MainActivity" />
+            android:name="com.example.Poly.HomeFragment"
+            android:label="Home"
+            android:screenOrientation="portrait"
+  			android:configChanges="keyboardHidden|orientation|screenSize" >
         </activity>
         <activity
-            android:name=".CancelActivity"
-            android:label="@string/title_activity_cancel"
-            android:parentActivityName=".MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.capstone.MainActivity" />
+            android:name="com.example.Poly.CNSEFragment"
+            android:label="Albany" 
+            android:screenOrientation="portrait"
+    		android:configChanges="keyboardHidden|orientation|screenSize">
         </activity>
         <activity
-            android:name=".CanceledClassesActivity"
-            android:label="@string/title_activity_canceled_classes"
-            android:parentActivityName=".MainActivity" >
+            android:name="com.example.Poly.WebViewActivity"
+            android:label="SUNY POLY"
+            android:parentActivityName="com.example.Poly.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.capstone.MainActivity" />
+                android:value="com.example.projecttesting.MainActivity" />
         </activity>
         <activity
-            android:name=".QuashActivity"
-            android:label="@string/title_activity_quash"
-            android:parentActivityName=".MainActivity" >
+            android:name="com.example.Poly.ContactActivity"
+            android:label="Utica Contacts"
+            android:parentActivityName="com.example.Poly.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.capstone.MainActivity" />
+                android:value="com.example.projecttesting.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.Poly.ProfActivity"
+            android:label="Rate My Professor"
+            android:parentActivityName="com.example.Poly.MainActivity"
+            android:windowSoftInputMode="stateHidden" 
+            android:screenOrientation="portrait"
+    		android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.projecttesting.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.Poly.WeatherActivity"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName="com.example.Poly.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.Poly.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.Poly.AContactActivity"
+            android:label="Albany&apos;s Contacts"
+            android:parentActivityName="com.example.Poly.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.projecttesting.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.Poly.MediaActivity"
+            android:label="@string/title_activity_media"
+            android:parentActivityName="com.example.Poly.MainActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.projecttesting.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.Poly.AMediaActivity"
+            android:label="@string/title_activity_amedia"
+            android:parentActivityName="com.example.Poly.MainActivity" 
+            android:screenOrientation="portrait"
+    		android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.projecttesting.MainActivity" />
         </activity>
     </application>
 

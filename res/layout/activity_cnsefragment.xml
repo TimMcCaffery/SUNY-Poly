@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2D40B" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome To Albany"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/ABlackBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="@string/ABlackBoard" />
+
+    <Button
+        android:id="@+id/AContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AClub"
+        android:layout_alignRight="@+id/AClub"
+        android:layout_below="@+id/AClub"
+        android:text="@string/AContacts" />
+
+    <Button
+        android:id="@+id/AEllucian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AContacts"
+        android:layout_alignRight="@+id/AContacts"
+        android:layout_below="@+id/AContacts"
+        android:text="@string/AEllucian" />
+
+    <Button
+        android:id="@+id/ALaundry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/AIntranet"
+        android:layout_below="@+id/AIntranet"
+        android:text="Laundry" />
+
+    <Button
+        android:id="@+id/AIntranet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/AEllucian"
+        android:layout_below="@+id/AEllucian"
+        android:text="@string/AIntranet" />
+
+    <Button
+        android:id="@+id/AClub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ABlackBoard"
+        android:layout_alignRight="@+id/ABlackBoard"
+        android:layout_below="@+id/ABlackBoard"
+        android:text="@string/AClubs" />
+
+    <Button
+        android:id="@+id/AStore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ALaundry"
+        android:layout_alignRight="@+id/ALaundry"
+        android:layout_below="@+id/ALaundry"
+        android:text="@string/ASchoolStore" />
+    
+       <Button
+           android:id="@+id/AMedia"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/AStore"
+           android:layout_alignRight="@+id/AStore"
+           android:layout_below="@+id/AStore"
+           android:text="Social Media" />
+
+</RelativeLayout>
