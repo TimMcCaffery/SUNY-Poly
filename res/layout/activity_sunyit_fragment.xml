@@ -3,103 +3,12 @@
     android:layout_height="match_parent"
     android:background="#0B9AE2" >
 
-    <Button
-        android:id="@+id/Banner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_alignRight="@+id/angel"
-        android:layout_below="@+id/angel"
-        android:text="@string/banner" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="Welcome To Utica"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <Button
-        android:id="@+id/angel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_alignRight="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:text="@string/angel" />
-
-    <Button
-        android:id="@+id/Laundry"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/School"
-        android:layout_alignLeft="@+id/School"
-        android:layout_alignRight="@+id/School"
-        android:text="Laundry" />
-
-    <Button
-        android:id="@+id/School"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Prof"
-        android:layout_alignLeft="@+id/Prof"
-        android:layout_alignRight="@+id/Prof"
-        android:text="School Store" />
-
-    <Button
-        android:id="@+id/Prof"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-       android:layout_below="@+id/Events"
-        android:layout_alignLeft="@+id/Events"
-        android:layout_alignRight="@+id/Events"
-        android:text="Rate My Professor" />
-
-    <Button
-        android:id="@+id/Events"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Contact"
-        android:layout_alignLeft="@+id/Contact"
-        android:layout_alignRight="@+id/Contact"
-        android:text="Events" />
-
-    <Button
-        android:id="@+id/Club"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Canned"
-        android:layout_alignLeft="@+id/Banner"
-        android:layout_alignRight="@+id/Banner"
-        android:text="@string/clubs" />
-
-    <Button
-        android:id="@+id/Contact"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Club"
-        android:layout_alignLeft="@+id/Club"
-        android:layout_alignRight="@+id/Club"
-        android:text="@string/AContacts" />
-
-    <Button
-        android:id="@+id/Canned"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/Banner"
-        android:layout_alignRight="@+id/Banner"
-        android:layout_below="@+id/Banner"
-        android:text="Canceled Classes" />
-
-    <Button
-        android:id="@+id/Media"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Laundry"
-        android:layout_alignLeft="@+id/School"
-        android:layout_alignRight="@+id/School"
-        android:text="Social Media" />
-
+    <ListView
+    android:id="@+id/listView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true" >
+	</ListView>
+  
 </RelativeLayout>

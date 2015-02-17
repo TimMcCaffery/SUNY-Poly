@@ -6,27 +6,30 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;  
 import android.support.v4.app.Fragment;  
+import android.util.Log;
 import android.view.LayoutInflater;  
 import android.view.View;  
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
  public class SunyitFragment extends Fragment {  
-      @Override  
+      
+	 final String[] items = new String[] { "Angel", "Banner", "Canceled Classes",
+		        "Clubs", "Contacts", "Events", "Rate My Professor", "School Store",
+		        "Laundry", "Social Media" };
+	 
+	 @Override  
       public View onCreateView(LayoutInflater inflater, ViewGroup container,  
                 Bundle savedInstanceState) {  
            // TODO Auto-generated method stub  
            View v = inflater.inflate(R.layout.activity_sunyit_fragment, container,false);  
            
-           Button  angel = (Button)v.findViewById(R.id.angel);
-           Button  banner = (Button)v.findViewById(R.id.Banner);
-           Button  cancel = (Button)v.findViewById(R.id.Canned);
-           Button  club = (Button)v.findViewById(R.id.Club);
-           Button  contact = (Button)v.findViewById(R.id.Contact);
-           Button  events = (Button)v.findViewById(R.id.Events);
-           Button  prof = (Button)v.findViewById(R.id.Prof);
-           Button  store = (Button)v.findViewById(R.id.School);
-           Button  laundry = (Button)v.findViewById(R.id.Laundry);
-           Button  Media = (Button)v.findViewById(R.id.Media);
+           ListView list = (ListView)v.findViewById(R.id.listView1);
+           ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, items);
+           list.setAdapter(adapter);
            
            final Intent ClubIntent = new Intent(getActivity(), ClubActivity.class);
            final Intent ContactIntent = new Intent(getActivity(), ContactActivity.class);
@@ -34,88 +37,53 @@ import android.widget.Button;
            final Intent WebViewIntent = new Intent(getActivity(), WebViewActivity.class);
            final Intent MediaIntent = new Intent(getActivity(), MediaActivity.class);
            
-           angel.setOnClickListener(new View.OnClickListener() {
-               @Override
-               public void onClick(View v) {
-            	   
-            	   WebViewIntent.putExtra("URL", "https://sunyit.sln.suny.edu/home.asp");
-                   startActivity(WebViewIntent);
-               }
-           });
-           
-           banner.setOnClickListener(new View.OnClickListener() {
-               @Override
-               public void onClick(View v) {
-            	   
-            	   WebViewIntent.putExtra("URL", "https://banner.sunyit.edu");
-                   startActivity(WebViewIntent);
-               }
-           });
-           
-           cancel.setOnClickListener(new View.OnClickListener() {
-               @Override
-               public void onClick(View v) {
-            	   WebViewIntent.putExtra("URL", "https://sunyit.edu/apps/canceled_classes");
-                   startActivity(WebViewIntent);
-               }
-           });
-           
-           club.setOnClickListener(new View.OnClickListener() {
-               @Override
-               public void onClick(View v) {
-                   startActivity(ClubIntent);
-               }
-           });
-           
-           contact.setOnClickListener(new View.OnClickListener() {
-               @Override
-               public void onClick(View v) {
-                   startActivity(ContactIntent);
-               }
-           });
-          
-           events.setOnClickListener(new View.OnClickListener() {
-               @Override
-               public void onClick(View v) {
-            	   
-            	   WebViewIntent.putExtra("URL", "https://sunyit.edu/events");
-                   startActivity(WebViewIntent);
-               }
-           });
-           
-           laundry.setOnClickListener(new View.OnClickListener() {
-               @Override
-               public void onClick(View v) {
-            	   String url = "http://m.laundryview.com";
-            	   Intent i = new Intent(Intent.ACTION_VIEW);
-            	   i.setData(Uri.parse(url));
-            	   startActivity(i);
-               }
-           });
-           
+           list.setOnItemClickListener(new OnItemClickListener() {
 
-           Media.setOnClickListener(new View.OnClickListener() {
                @Override
-               public void onClick(View v) {
-                   startActivity(MediaIntent);
+               public void onItemClick(AdapterView<?> arg0, View arg1, int position,
+                       long arg3) {
+
+                  if(position == 0){
+                	  WebViewIntent.putExtra("URL", "https://sunyit.sln.suny.edu/home.asp");
+                      startActivity(WebViewIntent);                	  
+                  }
+                  if(position == 1){
+                	  WebViewIntent.putExtra("URL", "https://banner.sunyit.edu");
+                      startActivity(WebViewIntent);  
+                  }
+				 if(position == 2){
+					   WebViewIntent.putExtra("URL", "https://sunyit.edu/apps/canceled_classes");
+	                   startActivity(WebViewIntent);
+                  }
+				 if(position == 3){
+					   startActivity(ClubIntent);
+				 }
+				 if(position == 4){
+					 startActivity(ContactIntent);
+				 }
+				 if(position == 5){
+	            	   WebViewIntent.putExtra("URL", "https://sunyit.edu/events");
+	                   startActivity(WebViewIntent);
+				 }
+				 if(position == 6){
+					 startActivity(ProfIntent);
+                 }
+				 if(position == 7){
+					   WebViewIntent.putExtra("URL", "http://m.bkstr.com/suny-itstore/home");
+	                   startActivity(WebViewIntent);
+                 }
+				 if(position == 8){
+	            	   String url = "http://m.laundryview.com";
+	            	   Intent i = new Intent(Intent.ACTION_VIEW);
+	            	   i.setData(Uri.parse(url));
+	            	   startActivity(i);
+                 }
+				 if(position == 9){
+					 startActivity(MediaIntent);
+                 }
                }
-           });
-           
-           prof.setOnClickListener(new View.OnClickListener() {
-               @Override
-               public void onClick(View v) {
-                   startActivity(ProfIntent);
-               }
-           });
-           
-           store.setOnClickListener(new View.OnClickListener() {
-               @Override
-               public void onClick(View v) {
-            	   WebViewIntent.putExtra("URL", "http://m.bkstr.com/suny-itstore/home");
-                   startActivity(WebViewIntent);
-               }
-           });
-           
+
+           });  
            
            return v;
       }  

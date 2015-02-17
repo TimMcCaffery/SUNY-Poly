@@ -7,99 +7,76 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
+import android.widget.AdapterView.OnItemClickListener;
 
 import com.example.projecttesting.R;
 
 public class CNSEFragment extends Fragment {  
-     @Override  
+    
+	 final String[] items = new String[] { "BlackBoard", "Clubs", "Contacts",
+		        "Ellucian", "Intranet", "Laundry", "School Store", "School Media"};
+	
+	@Override  
      public View onCreateView(LayoutInflater inflater, ViewGroup container,  
                Bundle savedInstanceState) {  
             
           View v = inflater.inflate(R.layout.activity_cnsefragment, container,false);  
           
-          Button  BlackBoard = (Button)v.findViewById(R.id.ABlackBoard);
-          Button  Contacts = (Button)v.findViewById(R.id.AContacts);
-          Button  Clubs = (Button)v.findViewById(R.id.AClub);
-          Button  Laundry = (Button)v.findViewById(R.id.ALaundry);
-          Button  SchoolStore = (Button)v.findViewById(R.id.AStore);
-          Button  Ellucian = (Button)v.findViewById(R.id.AEllucian);
-          Button  Intranet = (Button)v.findViewById(R.id.AIntranet);
-          Button  Media = (Button)v.findViewById(R.id.AMedia);
-          
+          ListView list = (ListView)v.findViewById(R.id.listView2);
+          ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, items);
+          list.setAdapter(adapter);
           
           final Intent ContactIntent = new Intent(getActivity(), AContactActivity.class);
           final Intent WebViewIntent = new Intent(getActivity(), WebViewActivity.class);
           final Intent MediaIntent = new Intent(getActivity(), AMediaActivity.class);
        
-        BlackBoard.setOnClickListener(new View.OnClickListener() {
-              @Override
-              public void onClick(View v) {
-           	   
-           	   WebViewIntent.putExtra("URL", "https://blackboard.albany.edu/");
-                  startActivity(WebViewIntent);
-              }
-          });
-          
-        Clubs.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-         	   
-         	   WebViewIntent.putExtra("URL", "https://myinvolvement.org/Organizations");
-                startActivity(WebViewIntent);
-            }
-        });
-        
-        Contacts.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(ContactIntent);
-            }
-        });
-        
-        Laundry.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-         	   String url = "http://m.laundryview.com/lvs.php?s=5777";
-         	   Intent i = new Intent(Intent.ACTION_VIEW);
-         	   i.setData(Uri.parse(url));
-         	   startActivity(i);
-            }
-        });
-        
-        Media.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(MediaIntent);
-            }
-        });
-        
-        SchoolStore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-         	   
-         	   WebViewIntent.putExtra("URL", "http://albany.bncollege.com/");
-                startActivity(WebViewIntent);
-            }
-        });
-        
-        Ellucian.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-         	   
-         	   WebViewIntent.putExtra("URL", "https://asurams.gabest.usg.edu/pls/B210/twbkwbis.P_GenMenu?name=homepage");
-                startActivity(WebViewIntent);
-            }
-        });
+          list.setOnItemClickListener(new OnItemClickListener() {
 
-        Intranet.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-         	   
-         	   WebViewIntent.putExtra("URL", "http://intranet.sunycnse.com/");
-                startActivity(WebViewIntent);
-            }
-        });
+              @Override
+              public void onItemClick(AdapterView<?> arg0, View arg1, int position,
+                      long arg3) {
+
+                 if(position == 0){ //BlackBoard
+                 	   WebViewIntent.putExtra("URL", "https://blackboard.albany.edu/");
+                        startActivity(WebViewIntent);
+                 }
+                 if(position == 1){ //Clubs
+                	 WebViewIntent.putExtra("URL", "https://myinvolvement.org/Organizations");
+                     startActivity(WebViewIntent);
+                 }
+				 if(position == 2){ //Contacts
+					 startActivity(ContactIntent);
+                 }
+				 if(position == 3){ //Ellucian
+				 	 WebViewIntent.putExtra("URL", "https://asurams.gabest.usg.edu/pls/B210/twbkwbis.P_GenMenu?name=homepage");
+		             startActivity(WebViewIntent); 
+				 }
+				 if(position == 4){//Intranet
+					  WebViewIntent.putExtra("URL", "http://intranet.sunycnse.com/");
+		              startActivity(WebViewIntent);
+		          }
+				 if(position == 5){//Laundry
+					 String url = "http://m.laundryview.com/lvs.php?s=5777";
+		         	 Intent i = new Intent(Intent.ACTION_VIEW);
+		         	 i.setData(Uri.parse(url));
+		         	 startActivity(i);
+					 }
+				 if(position == 6){//School Store
+					  WebViewIntent.putExtra("URL", "http://albany.bncollege.com/");
+		              startActivity(WebViewIntent);
+					 }
+				 if (position == 7){//Social Media
+					 startActivity(MediaIntent);
+				 }
+				 }
+				
+
+          });  
+       
         
           return v;
      }  
