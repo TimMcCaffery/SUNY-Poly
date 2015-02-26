@@ -1,41 +1,40 @@
 {
 	"maps": [
-		{
-		 "name" : "Student Center",
-	 	 "location" : "geo:0,0?q=Student+Center,+100+Seymour+Rd,+Utica,+NY+13502"		
-		 },
-		{
-		 "name" : "Donovan",
-	 	 "location" : "geo:0,0?q=Donovan+Hall,+100+Seymour+Rd,+Utica,+NY+13502"
-		},
-		{
-		 "name" : "Kunsela",
-	 	 "location" : "geo:0,0?q=Kunsela+Hall,+100+Seymour+Rd,+Utica,+NY+13502"		
-		 },
-		{
-		 "name" : "Campus Center",
-	 	 "location" : "geo:0,0?q=Campus+Center,+SUNY+Institute+of+Technology,+100+Seymour+Rd,+Utica,+NY+13502"		
-		 },
-		{
-		 "name" : "Oriskany",
-	 	 "location" : "geo:43.1389125,-75.2314018?z=14"		
-		 },
-		{
-		 "name" : "Adirondack",
-  	 	 "location" : "geo:43.1380306,-75.2337887?z=14"
-		},
-		{
-		 "name" : "Mohawk",
-	 	 "location" : "geo:43.1403119,-75.2243234?z=14"
-		},
-		{
-		 "name" : "Library",
-		 "location" : "geo:0,0?q=SUNY+Institute+of+Technology+-+Cayan+Library"
-		},
-		{
-		 "name" : "Field House",
-	 	 "location" : "geo:0,0?q=Field+House,+100+Seymour+Rd,+Utica,+NY+13502"
-		}
-		
+			{
+			 "name" : "Student Center",
+		 	 "location" : "geo:0,0?q=Student+Center,+100+Seymour+Rd,+Utica,+NY+13502"		
+			 },
+			{
+			 "name" : "Donovan",
+		 	 "location" : "geo:0,0?q=Donovan+Hall,+100+Seymour+Rd,+Utica,+NY+13502"
+			},
+			{
+			 "name" : "Kunsela",
+		 	 "location" : "geo:0,0?q=Kunsela+Hall,+100+Seymour+Rd,+Utica,+NY+13502"		
+			 },
+			{
+			 "name" : "Campus Center",
+		 	 "location" : "geo:0,0?q=Campus+Center,+SUNY+Institute+of+Technology,+100+Seymour+Rd,+Utica,+NY+13502"		
+			 },
+			{
+			 "name" : "Oriskany",
+		 	 "location" : "geo:43.1389125,-75.2314018?z=14"		
+			 },
+			{
+			 "name" : "Adirondack",
+	  	 	 "location" : "geo:43.1380306,-75.2337887?z=14"
+			},
+			{
+			 "name" : "Mohawk",
+		 	 "location" : "geo:43.1403119,-75.2243234?z=14"
+			},
+			{
+			 "name" : "Library",
+			 "location" : "geo:0,0?q=SUNY+Institute+of+Technology+-+Cayan+Library"
+			},
+			{
+			 "name" : "Field House",
+		 	 "location" : "geo:0,0?q=Field+House,+100+Seymour+Rd,+Utica,+NY+13502"
+			}
 	 ]
 }
