@@ -27,10 +27,16 @@ public class ListListener implements OnItemClickListener {
 		// We create an Intent which is going to display data
         Intent i = new Intent(Intent.ACTION_VIEW);
         // We have to set data for our new Intent
-        i.setData(Uri.parse(listItems.get(pos).getlink()));
+        if(listItems.get(pos).getlink() != ""){
+        	i.setData(Uri.parse(listItems.get(pos).getlink()));
+        }
+        if(listItems.get(pos).getLocation() != ""){
+        	i.setData(Uri.parse(listItems.get(pos).getLocation()));
+        } 
         // And start activity with our Intent
         activity.startActivity(i);
 	}
+	
 	
 }
 

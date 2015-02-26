@@ -22,9 +22,9 @@
 
         <activity
             android:name="com.example.Poly.MainActivity"
-            android:label="Suny Poly" 
-            android:screenOrientation="portrait"
-    		android:configChanges="keyboardHidden|orientation|screenSize">
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Suny Poly"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,21 +41,21 @@
         </activity>
         <activity
             android:name="com.example.Poly.SunyitFragment"
-            android:label="Utica" 
-            android:screenOrientation="portrait"
-   			android:configChanges="keyboardHidden|orientation|screenSize">
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Utica"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.Poly.HomeFragment"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="Home"
-            android:screenOrientation="portrait"
-  			android:configChanges="keyboardHidden|orientation|screenSize" >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.Poly.CNSEFragment"
-            android:label="Albany" 
-            android:screenOrientation="portrait"
-    		android:configChanges="keyboardHidden|orientation|screenSize">
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Albany"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.Poly.WebViewActivity"
@@ -75,11 +75,11 @@
         </activity>
         <activity
             android:name="com.example.Poly.ProfActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="Rate My Professor"
             android:parentActivityName="com.example.Poly.MainActivity"
-            android:windowSoftInputMode="stateHidden" 
             android:screenOrientation="portrait"
-    		android:configChanges="keyboardHidden|orientation|screenSize">
+            android:windowSoftInputMode="stateHidden" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.projecttesting.MainActivity" />
@@ -101,24 +101,12 @@
                 android:value="com.example.projecttesting.MainActivity" />
         </activity>
         <activity
-            android:name="com.example.Poly.MediaActivity"
-            android:label="@string/title_activity_media"
-            android:parentActivityName="com.example.Poly.MainActivity"
-            android:screenOrientation="portrait"
-            android:configChanges="keyboardHidden|orientation|screenSize" >
+            android:name="com.example.Poly.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName="com.example.Poly.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.projecttesting.MainActivity" />
-        </activity>
-        <activity
-            android:name="com.example.Poly.AMediaActivity"
-            android:label="@string/title_activity_amedia"
-            android:parentActivityName="com.example.Poly.MainActivity" 
-            android:screenOrientation="portrait"
-    		android:configChanges="keyboardHidden|orientation|screenSize">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.projecttesting.MainActivity" />
+                android:value="com.example.Poly.MainActivity" />
         </activity>
     </application>
 

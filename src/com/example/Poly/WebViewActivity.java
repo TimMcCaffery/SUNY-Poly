@@ -31,8 +31,10 @@ public class WebViewActivity extends ActionBarActivity {
 		//loads the url
 		webView.loadUrl(url);
 		
+		
 		webView.setWebViewClient(new myWebViewClient());
 	}
+	
 	
 	public class myWebViewClient extends WebViewClient {
 	    @Override

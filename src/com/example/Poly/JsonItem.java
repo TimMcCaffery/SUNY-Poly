@@ -8,6 +8,8 @@ public class JsonItem {
 	    private String name = ""; //Name of Club
 	    private String president = ""; //President of Club
 	    
+	    private String location = ""; //Location on the map
+	    
 	    private String link = ""; // To send the list to onClick
 	    
 	    private String tid = ""; //ID to lead to website of teacher
@@ -84,7 +86,15 @@ public class JsonItem {
 	    	this.link = link;
 	    }
 	 
-	    @Override
+	    public String getLocation() {
+			return location;
+		}
+
+		public void setLocation(String location) {
+			this.location = location;
+		}
+
+		@Override
 	    public String toString() {
 	        String option = "Testing";
 	        
@@ -94,6 +104,8 @@ public class JsonItem {
 	    		option = Fname + " " + Lname + ": " + rating_Num + " (" + rating_Word +") ";	   
 	    	}else if (UticaName != ""){
 	    		option = UticaName;
+	    	}else if (location != ""){
+	    		option = name;
 	    	}
 	    	
 	    	return option;

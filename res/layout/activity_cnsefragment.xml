@@ -1,14 +1,46 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E2D40B" >
+    android:background= "#E2D40B" >
 
-   <ListView
-    android:id="@+id/listView2"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentTop="true" >
-	</ListView>
-  
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/youtubeA" >
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/twitterA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="23dp"
+        android:src="@drawable/twitter" />
+
+    <ImageButton
+        android:id="@+id/facebookA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/twitterA"
+        android:src="@drawable/facebook" />
+
+    <ImageButton
+        android:id="@+id/linkdinA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listView1"
+        android:layout_toRightOf="@+id/youtubeA"
+        android:src="@drawable/linkdin"/>
+    
+    <ImageButton
+        android:id="@+id/youtubeA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/facebookA"
+        android:src="@drawable/youtube"/>
+    
 </RelativeLayout>

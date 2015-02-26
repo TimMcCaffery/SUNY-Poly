@@ -65,4 +65,29 @@ public class JsonUtils {
         }
 	}
 	
+	public static void fillListMap(JSONObject response, List<JsonItem> items) {
+		try{
+			// Get the data array containing posts
+            JSONArray jsonArray = response.getJSONArray("clubs");
+            
+            // Get each post data
+            for(int i=0; i < jsonArray.length(); i++){
+            		// Get an object which represents post
+                    JSONObject jsonPostObject = jsonArray.getJSONObject(i);
+                    
+                    // Create a data object and fill it with data 
+                    JsonItem item = new JsonItem();
+                    item.setname(jsonPostObject.optString("name"));
+                    item.setLocation(jsonPostObject.optString("location"));
+                  
+                    // Add new object to the list
+                    items.add(item);
+            }
+        }
+        catch(Exception e) {
+        	// Report problems
+            Log.e("MapVolley::JSONParser", "JSON parsing error!");
+        }
+	}
+	
 }

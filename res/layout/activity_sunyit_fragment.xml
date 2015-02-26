@@ -4,11 +4,43 @@
     android:background="#0B9AE2" >
 
     <ListView
-    android:id="@+id/listView1"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentTop="true" >
-	</ListView>
-  
+        android:id="@+id/listView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/youtube" >
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="23dp"
+        android:src="@drawable/twitter"/>
+
+    <ImageButton
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/twitter"
+        android:src="@drawable/facebook"  />
+
+    <ImageButton
+        android:id="@+id/linkdin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listView1"
+        android:layout_toRightOf="@+id/youtube"
+        android:src="@drawable/linkdin"/>
+    
+    <ImageButton
+        android:id="@+id/youtube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/facebook"
+        android:src="@drawable/youtube" />
+    
 </RelativeLayout>
